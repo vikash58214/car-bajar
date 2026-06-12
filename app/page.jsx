@@ -304,7 +304,6 @@ const VehicleDetails = ({ vehicle, onBack, onSelectOther }) => {
   return (
     <div className="min-h-screen bg-white pt-20 pb-20 animate-in fade-in slide-in-from-bottom-2 duration-500">
       <div className="container mx-auto px-4 md:px-6">
-        {/* Breadcrumb / Back Navigation */}
         <button
           onClick={onBack}
           className="flex items-center gap-2 text-gray-500 hover:text-blue-600 font-bold mb-6 group"
