@@ -25,7 +25,7 @@ import {
   Facebook,
   Twitter,
   Youtube,
-  Clock,
+  Clock
 } from "lucide-react";
 
 // --- Static Dummy Data ---
@@ -42,12 +42,12 @@ const VEHICLES = [
     images: [
       "https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&q=80&w=800",
       "https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=800"
     ],
     emi: "8,500",
     description:
       "Mint condition Maruti Suzuki Swift VXI. Regularly serviced at authorized service centers. Features include power windows, steering mounted controls, and a smooth petrol engine perfect for city driving.",
-    features: ["Power Steering", "ABS", "Dual Airbags", "Touchscreen Music System", "Reverse Sensors"],
+    features: ["Power Steering", "ABS", "Dual Airbags", "Touchscreen Music System", "Reverse Sensors"]
   },
   {
     id: 2,
@@ -61,12 +61,12 @@ const VEHICLES = [
     images: [
       "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800",
       "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&q=80&w=800"
     ],
     emi: "24,000",
     description:
       "Top-end Creta Diesel. Panoramic sunroof, ventilated seats, and premium Bose audio system. This car is virtually brand new and comes with manufacturer warranty.",
-    features: ["Panoramic Sunroof", "Ventilated Seats", "Wireless Charging", "LED Headlamps", "6 Airbags"],
+    features: ["Panoramic Sunroof", "Ventilated Seats", "Wireless Charging", "LED Headlamps", "6 Airbags"]
   },
   {
     id: 3,
@@ -79,12 +79,12 @@ const VEHICLES = [
     ownership: "2nd",
     images: [
       "https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1606152424101-ad949ca6485b?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1606152424101-ad949ca6485b?auto=format&fit=crop&q=80&w=800"
     ],
     emi: "14,200",
     description:
       "Well maintained executive sedan. The i-VTEC engine offers incredible performance. Comes with full service history and zero-dep insurance.",
-    features: ["Cruise Control", "Climate Control", "Alloy Wheels", "Leather Upholstery", "Reverse Camera"],
+    features: ["Cruise Control", "Climate Control", "Alloy Wheels", "Leather Upholstery", "Reverse Camera"]
   },
   {
     id: 4,
@@ -97,12 +97,12 @@ const VEHICLES = [
     ownership: "1st",
     images: [
       "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?auto=format&fit=crop&q=80&w=800"
     ],
     emi: "3,100",
     description:
       "Latest J-series engine Classic 350. Stealth Black color with alloy wheels. Hardly used, only 3,200 km driven. First service just completed.",
-    features: ["Dual Channel ABS", "Electric Start", "USB Charging", "Alloy Wheels", "Side Stand Sensor"],
+    features: ["Dual Channel ABS", "Electric Start", "USB Charging", "Alloy Wheels", "Side Stand Sensor"]
   },
   {
     id: 5,
@@ -115,13 +115,13 @@ const VEHICLES = [
     ownership: "1st",
     images: [
       "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800"
     ],
     emi: "52,000",
     description:
       "The beast of the road. Full 4x4 capability with low-range transfer case. Pristine condition, driven mostly on highways. Ceramic coating done.",
-    features: ["4WD", "Touchscreen Infotainment", "Powered Tailgate", "7 Seats", "Traction Control"],
-  },
+    features: ["4WD", "Touchscreen Infotainment", "Powered Tailgate", "7 Seats", "Traction Control"]
+  }
 ];
 
 const REVIEWS = [
@@ -129,46 +129,23 @@ const REVIEWS = [
     id: 1,
     name: "Rahul Sharma",
     rating: 5,
-    text: "Best dealership in the city! Got my Swift at a very fair price. The documentation was smooth.",
+    text: "Best dealership in the city! Got my Swift at a very fair price. The documentation was smooth."
   },
   {
     id: 2,
     name: "Priya Patel",
     rating: 5,
-    text: "Transparent dealing and very well-maintained cars. Highly recommended for first-time buyers.",
+    text: "Transparent dealing and very well-maintained cars. Highly recommended for first-time buyers."
   },
   {
     id: 3,
     name: "Amit Verma",
     rating: 4,
-    text: "Good collection of SUVs. The EMI calculator on the site helped me plan my budget.",
-  },
+    text: "Good collection of SUVs. The EMI calculator on the site helped me plan my budget."
+  }
 ];
 
 // --- Utility Components ---
-
-const FloatingActions = () => {
-  const whatsappNumber = "919876543210";
-  const callNumber = "+919876543210";
-  const message = encodeURIComponent("Hi, I saw your car on Google. Is it available?");
-
-  return (
-    <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
-      <a
-        href={`https://wa.me/${whatsappNumber}?text=${message}`}
-        className="bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center"
-      >
-        <MessageCircle size={28} fill="currentColor" />
-      </a>
-      <a
-        href={`tel:${callNumber}`}
-        className="bg-blue-600 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center animate-bounce"
-      >
-        <Phone size={28} fill="currentColor" />
-      </a>
-    </div>
-  );
-};
 
 const EMICalculator = ({ defaultPrice = 500000 }) => {
   const [price, setPrice] = useState(defaultPrice);
@@ -317,7 +294,7 @@ const VehicleDetails = ({ vehicle, onBack, onSelectOther }) => {
   const [activeImage, setActiveImage] = useState(0);
   const whatsappNumber = "919876543210";
   const message = encodeURIComponent(
-    `Hi, I saw the ${vehicle.name} on your website. Is it still available? I'd like to book a test drive.`,
+    `Hi, I saw the ${vehicle.name} on your website. Is it still available? I'd like to book a test drive.`
   );
 
   if (!vehicle) return null;
@@ -375,7 +352,7 @@ const VehicleDetails = ({ vehicle, onBack, onSelectOther }) => {
                 { label: "Driven", value: vehicle.km + " KM", icon: <Gauge className="text-blue-600" /> },
                 { label: "Fuel Type", value: vehicle.fuel, icon: <Fuel className="text-blue-600" /> },
                 { label: "Ownership", value: vehicle.ownership + " Owner", icon: <User className="text-blue-600" /> },
-                { label: "Transmission", value: "Manual/Auto", icon: <Zap className="text-blue-600" /> },
+                { label: "Transmission", value: "Manual/Auto", icon: <Zap className="text-blue-600" /> }
               ].map((spec, i) => (
                 <div key={i} className="bg-gray-50 p-4 rounded-2xl border border-gray-100 flex items-center gap-3">
                   <div className="bg-white p-2.5 rounded-xl shadow-sm">{spec.icon}</div>
@@ -972,8 +949,6 @@ export default function App() {
           </div>
         </div>
       </footer>
-
-      <FloatingActions />
     </div>
   );
 }
