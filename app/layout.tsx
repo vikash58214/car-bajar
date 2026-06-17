@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
-        <Script src="https://letstrip.world/widget.js?companyId=699c1bb7c765280bd05cf743" strategy="afterInteractive" />
+        <Script src="https://letstrip.world/widget.js?companyId=69ba4d1cf09ff82aa3f372f0" strategy="afterInteractive" />
       </body>
     </html>
   );
